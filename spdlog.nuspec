@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>spdlog</id>
+        <authors>Gabi Melman</authors>
+        <version>1.9.2</version>
+        <description>Very fast, header-only/compiled, C++ logging library</description>
+        <tags>native nativepackage C++ spdlog</tags>
+    </metadata>
+    <files>
+        <file src="build\Debug\**\*"   target="build\native\lib"     />
+        <file src="build\Release\**\*" target="build\native\lib"     />
+        <file src="include\**\*"       target="build\native\include" />
+        <file src="spdlog.props"       target="build\native"         />
+    </files>
+</package>
